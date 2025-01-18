@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/images/logo-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styleinfografico.css">
+    <link rel="stylesheet" href="/css/agendamento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Agendar uma Consulta</title>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="title-container">
+                <a href="/html/index.html">
+                    <img src="/images/logo_com_nome-removebg-preview.png" alt="Título" 
+                    style="height: 95px;
+                    width:300px;">
+                </a>
+            </div>
+            <button class="hamburger-btn" aria-label="Toggle navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+            <div class="container-navs">
+                <nav class="nav__list">
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            <b>O Hovet Lilicão</b><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li><a href="#" class="dropdown__link"><i class="ri-arrow-up-down-line"></i>
+                                    <div class="info-item">
+                                        <span class="infonum">
+                                            <a href="#">Especialidades</a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="dropdown__link"><i class="ri-arrow-up-down-line"></i>
+                                    <div class="info-item">
+                                        <span class="infonum">
+                                            <a href="/html/quemSomos.html">Quem somos</a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="dropdown__link"><i class="ri-arrow-up-down-line"></i>
+                                    <div class="info-item">
+                                        <span class="infonum">
+                                            <a href="/html/modelohovetlilicao.html" style="font-size: 1rem;">Modelo Hovet
+                                                Lilicão</a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                                </div>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="#" class="dropdown__sublink"><i class="ri-file-list-line"></i>
+                                            Documents</a></li>
+                                    <li><a href="#" class="dropdown__sublink"><i class="ri-cash-line"></i> Payments</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown__sublink"><i class="ri-refund-2-line"></i>
+                                            Refunds</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </nav>
+                <nav class="nav__list">
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            <b>Clínicas</b><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li><a href="#" class="dropdown__link"><i class="ri-pie-chart-line"></i>
+                                    <div class="info-item">
+                                        <span class="infolocal">
+                                            <a href="https://maps.app.goo.gl/Ron4KHXsj7fJbtbCA">
+                                                <span>Clínica Hovet Lilicão Aeroporto de Guarulhos</span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="dropdown__link"><i class="ri-pie-chart-line"></i>
+                                    <div class="info-item">
+                                        <span class="infolocal">
+                                            <a href="https://maps.app.goo.gl/Ron4KHXsj7fJbtbCA">
+                                               <span>Center Vet Lilicão - Vila Augusta - Guarulhos</span> 
+                                            </a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="dropdown__link"><i class="ri-pie-chart-line"></i>
+                                    <div class="info-item">
+                                        <span class="infolocal">
+                                            <a href="https://maps.app.goo.gl/YtCFoyQqRTvKvrM2A">
+                                                <span>Hospital Hovet Lilicão Mooca</span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </nav>
+                <nav class="nav__list">
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            <a href="/html/agendamento.html">
+                                <b>Agendar Consulta</b><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </a>
+                        </div>
+                </nav>
+                <nav class="nav__list">
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            <b>Contatos</b><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li><a href="#" class="dropdown__link"><i class="ri-pie-chart-line"></i>
+                                    <div class="info-item">
+                                        <span class="infonum">
+                                            <a href="https://wa.me/551128351614">Whatsapp Principal</a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="dropdown__link"><i class="ri-arrow-up-down-line"></i>
+                                    <div class="info-item">
+                                        <span class="infonum">
+                                            <a href="https://wa.me/551128351614">Whatsapp Secundário</a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                                </div>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="#" class="dropdown__sublink"><i class="ri-file-list-line"></i>
+                                            Documents</a></li>
+                                    <li><a href="#" class="dropdown__sublink"><i class="ri-cash-line"></i> Payments</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown__sublink"><i class="ri-refund-2-line"></i>
+                                            Refunds</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <br><br>
+
+    <section id="agendamentos">
+        <div class="container" id="valores-container" style="width:500px;">
+            <hr>
+            <h2 class="fivestr" style="text-align: center; margin-top: 40px;">Calcular o valor da sua consulta</h2>
+            <hr>
+            <div class="bt-container">
+                <div class="button-item">
+                    <button class="consulta-bt" onclick="selecionarTipo('generalista', this)"
+                    style="background-color: #747474;
+                        border-radius: 1cm;">
+                        <img src="/images/cachorro-icon.png" alt="Consulta Generalista" class="btn-icon">
+                    </button>
+                    <span class="consulta-bt-span">Cachorro</span>
+                </div>
+                <div class="button-item">
+                    <button class="consulta-bt" onclick="selecionarTipo('generalista', this)"
+                    style="background-color: #747474;
+                        border-radius: 1cm;">
+                        <img src="/images/gato-icon.png" alt="Consulta Generalista" class="btn-icon">
+                    </button>
+                    <span class="consulta-bt-span">Gato</span>
+                </div>
+                <div class="button-item">
+                    <button class="consulta-bt" onclick="selecionarTipo('silvestre', this)"
+                    style="background-color: #747474;
+                        border-radius: 1cm;">
+                        <img src="/images/silvestre-icon-removebg-preview.png" alt="Consulta Silvestre" class="btn-icon"
+                        style="width: 70px; height:70px;">
+                    </button>
+                    <span class="consulta-bt-span">Silvestres</span>
+                </div>
+            </div>
+            <div class="container-sub">
+                <h2 class="fivestr" style="margin-top: 40px; text-align:center;">Turno</h2>
+                <select id="horario" style="text-align: center; background: bottom;">
+                    <option value="">Selecione o horário</option>
+                    <option value="manha">Turno da Manhã (9:00 às 12:00)</option>
+                    <option value="tarde">Turno da Tarde (12:00 às 18:00)</option>
+                    <option value="noite">Turno da Noite (18:00 às 22:00)</option>
+                </select>
+                <button onclick="calcularValor()" style="display: flex; margin:auto; margin-top:100px;">
+                    Calcular Valor
+                </button>
+        
+            </div>
+            <div id="resultado"
+            style="font-weight: 300;"></div>
+        </div>
+        
+            <div class="container">
+                <div class="container" id="main">
+                    <div class="sign-up">
+                        <form id="form-agendamento" action="#">
+                            <h1>Agendar Consulta pelo Whatapp:</h1>
+                            <p>
+                                escaneie este QR-code com seu Smartphone:
+                            </p>
+                            <div class="qrcode-whatsapp">
+                                <img src="/images/qr-codewhatsapp.jpeg" alt="" style="width: 200px;">
+                            </div>
+                            <p><b>OU</b></p>
+                            <a href="https://wa.me/551128351614" id="whatsapp-me">Clique Aqui!</a>
+                        </form>
+                    </div>
+                    <div class="sign-in">
+                        <form id="form-wpp" action="#" onsubmit="ProcessarPagamento(event)">
+                            <div class="linear-text-check">
+                                <h1 class="h1io">Agendar uma Consulta</h1>
+                                <span>Preencha as seguintes informações:</span>
+                            </div>
+                            <input type="text" id="clienteNome" placeholder="Nome completo" required />
+                            <input type="CPF" id="cpf" placeholder="CPF" required />
+                            <input type="email" id="email" placeholder="Email" required />
+                            <input type="tel" id="telefone" placeholder="(DDD) 940028922" required />
+                            <input type="date" id="data" required />
+                            <input type="time" id="hora" required min="09:00" max="22:00" required />
+                            <input type="text" id="queixaPrincipal" placeholder="Queixa Principal">
+                            <select name="tipoConsulta" id="tipoConsulta"
+                            style="background-color: #eee;
+                            border: none;
+                            margin: 8px 0;
+                            padding: 10px 15px;
+                            font-size: 13px;
+                            border-radius: 8px;
+                            width: 100%;
+                            outline: none;" required>
+                                <option value="" selected>Selecione o Tipo de Consulta</option>
+                                <option value="generalista">Generalista (Gatos e Cachorros)</option>
+                                <option value="silvestres">Silvestres (Animais Silvestres)</option>
+                            </select>
+                            <select name="setor" id="setor"
+                            style="background-color: #eee;
+                            border: none;
+                            margin: 8px 0;
+                            padding: 10px 15px;
+                            font-size: 13px;
+                            border-radius: 8px;
+                            width: 100%;
+                            outline: none;" required>
+                                <option value="" selected>Selecione o Setor</option>
+                                <option value="Mooca">Setor - Mooca</option>
+                                <option value="Aeroporto Guarulhos">Setor - Aeroporto Guarulhos</option>
+                                <option value="Vila Augusta">Setor - Vila Augusta - Guarulhos</option>
+                            </select>
+                                <button type="submit" id="pagamento">Ir para o pagamento!</button>
+                        </form>
+                    </div>
+                    <div class="toggle-container">
+                        </form>
+                    </div>
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <div class="overlay-left">
+                                <h1>Agendar Pelo Site!</h1>
+                                <p>Voltar e agendar pelo site.</p>
+                                <button id="signIn">Voltar</button>
+                            </div>
+                            <div class="overlay-right">
+                                <h1>Agendar Pelo Whatsapp!</h1>
+                                <p>
+                                    Converse com um de nossos funcionários via Whatsapp
+                                </p>
+                                <button class="hidden" id="signUp">Vamos Lá!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="emailbox">
+        <div class="emailbox-container">
+            <div class="emailbox-content">
+                <div class="left-side">
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Endereços</div>
+                        <div class="text-one" style="color: #3B67AA;">Clínica Hovet Lilicão Aeroporto de Guarulhos</div>
+                        <div class="text-two" style="color: chartreuse;">Hospital Hovet Lilicão Mooca</div>
+                        <div class="text-three" style="color: #3B67AA;">Center Vet Lilicão - Vila Augusta - Guarulhos
+                        </div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="topic">Telefone</div>
+                        <div class="text-one">+55 112835-1614</div>
+                        <div class="text-one">+55 1195730-4584</div>
+                    </div>
+                    <div class="email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one">hovetlilicao@gmail.com</div>
+                        <div class="text-one">petstorelilicao@gmail.com</div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="topic-text">Nos envie uma mensagem</div>
+                    <p>A Clínica Veterinária Hovet Lilicão está aqui para cuidar do seu pet com amor e dedicação. Envie
+                        uma mensagem para dúvidas ou agendamentos. Será um prazer atendê-lo!</p>
+                    <form class="form-inputbox" action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Digite seu nome">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Digite seu email">
+                        </div>
+                        <div class="input-box message-box">
+                            <textarea placeholder="Escreva uma mensagem para nós"></textarea>
+                        </div>
+                        <div class="emailbox-button">
+                            <input type="button" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-col-container">
+            <div class="footer-logo">
+                <a href="/html/index.html"
+                style="display: grid; margin:auto; text-decoration:none;">
+                    <img src="/images/logo-removebg-preview.png" alt="Logo">
+                    <Span class="fivestr">Hovet Lilicão</Span>
+                </a>
+            </div>
+            <div class="footer-col">
+                <h4>Seções</h4>
+                <ul>
+                    <li><a href="#introduction">Introdução</a></li>
+                    <li><a href="#main2">Serviços</a></li>
+                    <li><a href="#subtitle-container">Avaliações</a></li>
+                    <li><a href="#emailbox">Contate-nos</a></li>
+                    <li><a href="#map">locais</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Sub páginas</h4>
+                <ul>
+                    <li><a href="/html/agendamento.html">Agendar Consulta</a></li>
+                    <li><a href="/html/modelohovetlilicao.html">Modelo Hovet Lilicão</a></li>
+                    <li><a href="/html/faq.html">Perguntas Frequentes</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>outros</h4>
+                <ul>
+                    <li><a href="/html/trabalheConosco.html">Trabalhe Conosco</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Nossas redes sociais</h4>
+                <div class="links">
+                    <a href="https://www.tiktok.com/@hovet_lilicao"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/hospitalveterinariolilicao/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/551128351614"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/hovetlilicao/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const main = document.getElementById('main');
+
+        signUpButton.addEventListener('click', () => {
+            main.classList.add("right-panel-active");
+        });
+        signInButton.addEventListener('click', () => {
+            main.classList.remove("right-panel-active");
+        });
+    </script>
+    <script>
+        let tipoConsulta = '';
+    
+        function selecionarTipo(tipo, botao) {
+            tipoConsulta = tipo;
+    
+            // Remover a classe 'active' de todos os botões
+            const botoes = document.querySelectorAll('.consulta-bt');
+            botoes.forEach(b => b.classList.remove('active'));
+    
+            // Adicionar a classe 'active' ao botão clicado
+            botao.classList.add('active');
+    
+            // Atualizar as opções do select de horários com base no tipo selecionado
+            atualizarOpcoesHorario();
+        }
+    
+        function atualizarOpcoesHorario() {
+            const horarioSelect = document.getElementById('horario');
+            horarioSelect.innerHTML = ''; // Limpa todas as opções atuais
+    
+            // Adiciona a opção padrão
+            const opcaoPadrao = document.createElement('option');
+            opcaoPadrao.value = '';
+            opcaoPadrao.textContent = 'Selecione o horário';
+            horarioSelect.appendChild(opcaoPadrao);
+    
+            if (tipoConsulta === 'generalista') {
+                horarioSelect.appendChild(criarOpcao('tarde', 'Geral (9:00 às 21:59)'));
+                horarioSelect.appendChild(criarOpcao('noite', 'último turno (após de 22:00)'));
+            } else if (tipoConsulta === 'silvestre') {
+                horarioSelect.appendChild(criarOpcao('tarde', 'Turno da Tarde ( 16:00 às 20:59)'));
+                horarioSelect.appendChild(criarOpcao('noite', 'Turno da Noite (21:00 às 21:59)'));
+                horarioSelect.appendChild(criarOpcao('ultimo', 'último turno (Após às 22:00)'));
+            }
+        }
+    
+        function criarOpcao(valor, texto) {
+            const opcao = document.createElement('option');
+            opcao.value = valor;
+            opcao.textContent = texto;
+            return opcao;
+        }
+    
+        function calcularValor() {
+            const horario = document.getElementById('horario').value;
+            let valor = 0;
+            let mensagem = "";
+        
+            if (tipoConsulta === 'generalista') {
+                if (horario === 'manha' || horario === 'tarde') {
+                    valor = 65.00;
+                } else if (horario === 'noite') {
+                    valor = 143.00;
+                }
+                } else if (tipoConsulta === 'silvestre') {
+                if (horario === 'tarde') {
+                    valor = 143.20;
+                } else if (horario === 'noite') {
+                    valor = 170.40;
+                }
+                  else if (horario ==="ultimo"){
+                  valor = 201.6
+                }
+            }
+        
+            // Exibir o resultado
+            if (mensagem) {
+                document.getElementById('resultado').innerText = mensagem;
+            } else {
+                document.getElementById('resultado').innerHTML = `O valor da consulta é: <strong>R$${valor.toFixed(2)}</strong>`;
+            }
+        }       
+    </script>
+    <script>
+        document.getElementById("tipoConsulta").addEventListener("change", function () {
+            const tipoConsulta = this.value;
+            const horaInput = document.getElementById("hora");
+        
+            if (tipoConsulta === "silvestres") {
+                horaInput.min = "16:00";
+                horaInput.max = "22:00";
+            } else if (tipoConsulta === "generalista") {
+                horaInput.min = "09:00";
+                horaInput.max = "23:00";
+            } else {
+                horaInput.min = "";
+                horaInput.max = "";
+            }
+        
+            if (horaInput.value && (horaInput.value < horaInput.min || horaInput.value > horaInput.max)) {
+                horaInput.value = ""; 
+                alert("O horário selecionado está fora do intervalo permitido para este tipo de consulta.");
+            }
+        });
+    </script>
+    <script>
+function ajustarLimitesData() {
+    const dataInput = document.getElementById("data");
+    const hoje = new Date();
+
+    // Data mínima: hoje
+    const dataMinima = new Date(hoje);
+    dataMinima.setHours(0, 0, 0, 0);
+
+    // Data máxima: 4 meses a partir de hoje
+    const dataMaxima = new Date(hoje);
+    dataMaxima.setMonth(dataMaxima.getMonth() + 4);
+
+    // Ajustar os valores do campo de data no formato ISO (yyyy-MM-dd)
+    dataInput.min = dataMinima.toISOString().split("T")[0];
+    dataInput.max = dataMaxima.toISOString().split("T")[0];
+}
+
+
+ajustarLimitesData();
+document.getElementById("data").addEventListener("input", ajustarLimitesData);
+
+    </script>
+    <script src="/js/agendamento.js"></script>
+</body>
+</html>

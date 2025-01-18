@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    background: linear-gradient(to right, #282828, #4b4b4b);
+    color: #fff; /* Cor do texto */
+}
+
+section {
+    text-align: center; /* Centralizando todos os textos dentro da section */
+    padding: 40px 20px;
+}
+
+.main-title h1 {
+    font-size: 4rem;
+}
+
+.subtitle h3 {
+    font-weight: 300;
+    font-size: 2rem;
+    max-width: 800px; /* Definindo o max-width para o subtítulo */
+    margin: 0 auto; /* Centralizando o subtítulo */
+}
+
+.logo-img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sobreNos-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.sobreNos p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Estilos da lista de etapas */
+.list-container ul {
+    list-style-type: circle; 
+    padding: 0;
+    margin: 0;
+}
+
+.list-container ul li {
+    position: relative;
+    font-size: 1rem; /* Diminuindo o tamanho da fonte */
+    padding-left: 28px; /* Diminui o espaço entre o texto e o círculo */
+    margin-bottom: 12px; /* Ajusta o espaçamento entre os itens */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+    display: flex;
+}
+
+/* Criando os círculos */
+.list-container ul li::before {
+    content: '';
+    position: absolute;
+    left: 5px; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px; 
+    height: 16px; 
+    background-color: #fff; 
+    border-radius: 50%; 
+    border: 2px solid #fff; 
+}
+/* Estilo do link */
+.link a {
+    font-size: 1.25rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link a:hover {
+    color: #294fcd; 
+}
+
+/* Estilos do container */
+.container {
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(124, 124, 124, 0.35);
+    position: relative;
+    width: 768px;
+    max-width: 100%;
+    min-height: 300px;
+    top: 0;
+    height: 65%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+html,
+body {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  background: linear-gradient(to right, #282828, #4b4b4b)
+}
+
+.faq-title span {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 5rem; /* Tamanho padrão para o span */
+  color: #eee;
+}
+
+.faq-title {
+  margin: 50px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  font-size: 6vw; /* Tamanho padrão para o título */
+}
+
+@media screen and (max-width: 1200px) {
+  .faq-title {
+    font-size: 8vw; 
+  }
+  .faq-title span {
+    font-size: 4rem; /* Ajuste do tamanho da fonte do span para telas médias */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .faq-title {
+    font-size: 10vw; 
+  }
+  .faq-title span {
+    font-size: 3.5rem; /* Ajuste do tamanho da fonte do span para telas menores */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .faq-title {
+    font-size: 12vw; 
+  }
+  .faq-title span {
+    font-size: 3rem; /* Ajuste do tamanho da fonte do span para telas muito pequenas */
+  }
+}
+.related {
+  display: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.related.active {
+  display: block;
+}
+

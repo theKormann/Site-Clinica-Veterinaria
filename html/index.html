@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/images/logo-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>Hovet Lilicão</title>
+</head>
+<div id="welcome-popup" class="popup-overlay">
+    <div class="popup-content">
+        <img src="/images/Capa para facebook janeiro branco moderno clean cinza claro e escuro (5).png" alt="Anúncio" class="popup-image" />
+        <span class="span-popup">Aproveite a nossa mais nova novidade!</span>
+        <button id="close-popup" class="close-button">Fechar</button>
+    </div>
+</div>
+
+<body>
+    <div id="loading">
+        <img src="/images/logo-removebg-preview.png" alt="Carregando...">
+    </div>
+    <header class="header">
+        <div class="header-top">
+            <div class="title-container">
+                <a href="/html/index.html">
+                    <img src="/images/logo_com_nome-removebg-preview.png" alt="Título" 
+                    style="height: 95px;
+                    width:300px;">
+                </a>
+            </div>
+            <button class="hamburger-btn" aria-label="Toggle navigation">
+                <span class="hamburger-icon"></span>
+            </button>
+            <div class="container-navs">
+                <nav class="nav__list">
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            <b>O Hovet Lilicão</b><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li><a href="#" class="dropdown__link"><i class="ri-arrow-up-down-line"></i>
+                                    <div class="info-item">
+                                        <span class="infonum">
+                                            <a href="#">Especialidades</a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="dropdown__link"><i class="ri-arrow-up-down-line"></i>
+                                    <div class="info-item">
+                                        <span class="infonum">
+                                            <a href="/html/quemSomos.html">Quem somos</a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="dropdown__link"><i class="ri-arrow-up-down-line"></i>
+                                    <div class="info-item">
+                                        <span class="infonum">
+                                            <a href="/html/modelohovetlilicao.html" style="font-size: 1rem;">Modelo Hovet
+                                                Lilicão</a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                                </div>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="#" class="dropdown__sublink"><i class="ri-file-list-line"></i>
+                                            Documents</a></li>
+                                    <li><a href="#" class="dropdown__sublink"><i class="ri-cash-line"></i> Payments</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown__sublink"><i class="ri-refund-2-line"></i>
+                                            Refunds</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </nav>
+                <nav class="nav__list">
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            <b>Clínicas</b><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li><a href="#" class="dropdown__link"><i class="ri-pie-chart-line"></i>
+                                    <div class="info-item">
+                                        <span class="infolocal">
+                                            <a href="https://maps.app.goo.gl/Ron4KHXsj7fJbtbCA">
+                                                <span>Clínica Hovet Lilicão Aeroporto de Guarulhos</span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="dropdown__link"><i class="ri-pie-chart-line"></i>
+                                    <div class="info-item">
+                                        <span class="infolocal">
+                                            <a href="https://maps.app.goo.gl/Ron4KHXsj7fJbtbCA">
+                                               <span>Center Vet Lilicão - Vila Augusta - Guarulhos</span> 
+                                            </a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="dropdown__link"><i class="ri-pie-chart-line"></i>
+                                    <div class="info-item">
+                                        <span class="infolocal">
+                                            <a href="https://maps.app.goo.gl/YtCFoyQqRTvKvrM2A">
+                                                <span>Hospital Hovet Lilicão Mooca</span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </nav>
+                <nav class="nav__list">
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            <a href="/html/agendamento.html">
+                                <b>Agendar Consulta</b><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </a>
+                        </div>
+                </nav>
+                <nav class="nav__list">
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            <b>Contatos</b><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li><a href="#" class="dropdown__link"><i class="ri-pie-chart-line"></i>
+                                    <div class="info-item">
+                                        <span class="infonum">
+                                            <a href="https://wa.me/551128351614">Whatsapp Principal</a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#" class="dropdown__link"><i class="ri-arrow-up-down-line"></i>
+                                    <div class="info-item">
+                                        <span class="infonum">
+                                            <a href="https://wa.me/551128351614">Whatsapp Secundário</a>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <div class="dropdown__link">
+                                    <i class="ri-bar-chart-line"></i> Reports <i class="ri-add-line dropdown__add"></i>
+                                </div>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="#" class="dropdown__sublink"><i class="ri-file-list-line"></i>
+                                            Documents</a></li>
+                                    <li><a href="#" class="dropdown__sublink"><i class="ri-cash-line"></i> Payments</a>
+                                    </li>
+                                    <li><a href="#" class="dropdown__sublink"><i class="ri-refund-2-line"></i>
+                                            Refunds</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="slider-responsive">
+        <div class="swiper" style="width: 100%; height: 100%;">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <h1 class="title three"></h1>
+                    <img src="#" alt="Image 3" />
+                </div>
+
+                <div class="swiper-slide">
+                    <h1 class="title four"></h1>
+                    <img src="#" alt="Image 4" />
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <div id="img">
+        <img id="arrow-down" src="/images/setamelhorada-removebg-preview.png" alt="" width="auto">
+        <p class="click-on-arrow">Explorar o site</p>
+    </div>
+
+    <section id="introduction" style="height:100rem;">
+        <ul class="li-apresentation-templates">
+            <li class="apresentation-item left" style="left: -7%;">
+                <div class="views-field-image">
+                    <img src="/images/nossamissão.png" alt="">
+                </div>
+                <div class="views-field-text">
+                    <p>
+                    <div class="fivestr">Na Hovet Lilicão, Nossa missão</div> é proporcionar o melhor cuidado e carinho
+                    para os seus pets. Somos uma clínica veterinária dedicada à saúde e bem-estar dos seus amigos de
+                    quatro patas, oferecendo uma ampla gama de serviços de alta qualidade em um ambiente acolhedor e
+                    equipado com a mais moderna tecnologia.</p>
+                </div>
+            </li>
+            <br>
+            <li class="apresentation-item right" style="left:10%;">
+                <div class="views-field-image">
+                    <img src="/images/Logotipo Campanha conscientização de castração solidária lettering azul e vermelho  .png"
+                        alt="">
+                </div>
+                <div class="views-field-text">
+                    <p>
+                    <div class="fivestr">Quem somos?</div> somos apaixonados por cuidar de quem você mais ama. Somos uma
+                    clínica veterinária dedicada à saúde e ao bem-estar dos pets, oferecendo serviços de alta qualidade
+                    em um ambiente acolhedor e moderno. Nossa equipe é formada por profissionais qualificados,
+                    comprometidos em proporcionar cuidado, carinho e confiança para os seus amigos de quatro patas e
+                    suas famílias.</p>
+                </div>
+            </li>
+            <br>
+            <li class="apresentation-item left" style="left: 1%;">
+                <div class="views-field-image">
+                    <img src="/images/nossovalor.png" alt="">
+                </div>
+                <div class="views-field-text">
+                    <p>
+                    <div class="fivestr">nossos valores,</div> são baseados no respeito, na ética e no compromisso com o
+                    bem-estar dos pets e suas famílias. Atuamos com dedicação, amor e profissionalismo, oferecendo um
+                    atendimento humanizado e serviços de qualidade, sempre com a confiança e a excelência como nossos
+                    pilares.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <br><br><br><br>
+    <main id="main2">
+        <div class="title-container-services">
+            <div class="titles-services">
+                <span class="title-services-1">Nossos</span>
+                <span class="title-services-2">Serviços</span>
+            </div>
+        </div>
+        <div class="intro-text-container">
+            <span class="texter">
+                <p class="intro-text-1">
+                    Na Clínica Veterinária Hovet Lilicão, oferecemos <i><b>Serviços</b></i> completos para a saúde do
+                    seu pet, incluindo consultas, vacinas e castração. Nossa equipe dedicada cuida do seu animal com
+                    excelência e carinho.
+                </p>
+            </span>
+        </div>
+        <swiper-container class="mySwiper" pagination="false" effect="coverflow" grab-cursor="true"
+            centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+            coverflow-effect-depth="200" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true"
+            initial-slide="2">
+            <swiper-slide class="swiper">
+                <div class="card">
+                    <div class="sliderText">
+                        <span class="name-service">Castração de Cães e Gatos</span>
+                    </div>
+                    <div class="content">
+                        <p>
+                            A castração na Clínica Veterinária Hovet Lilicão é segura e ajuda na saúde e bem-estar dos
+                            animais. Ela previne doenças, controla comportamentos indesejados e garante uma vida mais
+                            saudável e longa para seu pet. Confie na nossa equipe para cuidar do seu animal com
+                            segurança e carinho.
+                        </p>
+                        <button class="saibamais">Saiba Mais</button>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper">
+                <div class="card">
+                    <div class="sliderText">
+                        <span class="name-service-2">Consulta de Animais Silvestres</span>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Na Clínica Veterinária Hovet Lilicão, oferecemos consultas especializadas para animais
+                            silvestres, garantindo cuidados de qualidade e um atendimento especializado para a saúde e
+                            bem-estar dessas espécies.
+                        </p>
+                        <button class="saibamais">Saiba Mais</button>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper">
+                <div class="card">
+                    <div class="sliderText">
+                        <span class="name-service-3">Clínica Geral</span>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Na Clínica Veterinária Hovet Lilicão, oferecemos consultas de clínica geral para pets, com
+                            atendimento dedicado e cuidados de qualidade. Nossa equipe está preparada para garantir a
+                            saúde e o bem-estar dos animais, oferecendo diagnósticos precisos e tratamentos
+                            personalizados.
+                        </p>
+                        <button class="saibamais">Saiba Mais</button>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper">
+                <div class="card">
+                    <div class="sliderText">
+                        <span class="name-service-4">Internação e UTI</span>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Oferecemos serviços de internação e UTI, com cuidados intensivos e monitoramento contínuo.
+                            Contamos com uma equipe especializada e uma estrutura completa para garantir a segurança, o
+                            conforto e a recuperação dos pets que necessitam de atenção especial.
+                        </p>
+                        <button class="saibamais">Saiba Mais</button>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="swiper">
+                <div class="card">
+                    <div class="sliderText">
+                        <span class="name-service-5"></span>
+                    </div>
+                    <div class="content">
+                        <p>
+                        </p>
+                        <button class="saibamais">Saiba Mais</button>
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+
+    </main>
+    <br>
+    <div id="subtitle-container">
+        <div class="title-card-main" style="display: flex; justify-content:flex-start">
+            <span class="span-card-main">
+                O que dizem de nós:
+            </span>
+        </div>
+        <div class="title-card" style="display: flex; justify-content:flex-start">
+            <span class="span-card-subtitle">
+                Veja o que os tutores falam sobre nossa clínica no Google: atendimento nota 10, profissionais dedicados
+                e muito carinho com os pets. Venha nos conhecer!
+            </span>
+        </div>
+    </div>
+    <section id="card container grid">
+        <div id="card_container">
+            <!--==================== CARD 1 ====================-->
+            <article class="card__content grid" style="width: 235;">
+                <div class="card__pricing">
+                    <div class="card__star-icon">
+                        <p class="fivestr">5.0</p>
+                        <img src="/images/estrela.webp" alt="" style="height: 60px;">
+                    </div>
+                </div>
+
+                <header class="card__header">
+                    <div class="card__header-circle grid">
+                        <img src="/images/gstars-removebg-preview.png" alt="" class="card__header-img">
+                    </div>
+
+                    <span class="card__header-subtitle">5 Estrelas</span>
+                    <h1 class="card__header-title">
+                        <img src="/images/anaGMaps.png" alt="" style="height: 80px;top: 70px;position: absolute;">
+                    </h1>
+                </header>
+
+                <ul class="card__list grid">
+                    <br>
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description" style="margin-top: 50px;">
+                            <span class="card__text" style="font: size 2rem;;">
+                                "Eu super recomendo!! atendimento excelente,
+                                A doutora Tatiane é super atenciosa e precisa em seu atendimento.
+                                Ela diagnosticou o vírus da cinomose no meu cachorrinho, me passou uma receita
+                                maravilhosa e explicou passo a passo. Além disso, me pedia para retornar a consulta
+                                assim que precisasse, sem precisar pagar por fora novamente, enquanto o cachorro não
+                                ficasse bem, enfim uma ótima profissional e devido a seus cuidados o meu cachorro se
+                                recuperou muito bem e hoje em dia está saudável aqui em casa graças a doutora Tatiane,
+                                parabéns e obrigada a toda a equipe lilicão."
+                            </span>
+                        </p>
+                    </li>
+
+                </ul>
+            </article>
+
+            <!--==================== CARD 2 ====================-->
+            <article class="card__content grid">
+                <div class="card__pricing">
+                    <div class="card__star-icon">
+                        <p class="fivestr">5.0</p>
+                        <img src="/images/estrela.webp" alt="" style="height: 60px;">
+                    </div>
+                </div>
+
+                <header class="card__header">
+                    <div class="card__header-circle grid">
+                        <img src="/images/gstars-removebg-preview.png" alt="" class="card__header-img">
+                    </div>
+
+                    <span class="card__header-subtitle">5 Estrelas</span>
+                    <h1 class="card__header-title">
+                        <img src="/images/ClaudiaGMaps.png" alt="" style="height: 80px;top: 70px;position: absolute;">
+                    </h1>
+                </header>
+
+                <ul class="card__list grid">
+                    <br>
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description" style="margin-top: 50px;">
+                            <span class="card__text">
+                                "Quero agradecer a toda equipe do HovetLilicão.
+                                Todas as vezes que a Pantera, precisou, vocês estavam ai, e foram ótimos, posso dizer
+                                que salvaram a Panterusca por 2 vezes.
+                                Uma parte do tratamento foi com medicamentos e a outra parte foi com a competência, a
+                                responsabilidade, o carinho, amor, a dedicação, a sensibilidade, a confiança e a
+                                empatia, esta parte é muito importante no atendimento. Nós nos sentimos acolhidas por
+                                toda a equipe.
+                                Não tenho nada a reclamar, somente agradecer e desejar todo sucesso que vocês merecem.
+                                Muito obrigada por tanto e tudo que fuzeram pela Pantera.
+                                Que Deus recompense todos vocês.
+                                Gratidão."
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </article>
+
+            <!--==================== CARD 3 ====================-->
+            <article class="card__content grid">
+                <div class="card__pricing">
+                    <div class="card__star-icon">
+                        <p class="fivestr">5.0</p>
+                        <img src="/images/estrela.webp" alt="" style="height: 60px;">
+                    </div>
+                </div>
+
+                <header class="card__header">
+                    <div class="card__header-circle grid">
+                        <img src="/images/gstars-removebg-preview.png" alt="" class="card__header-img">
+                    </div>
+
+                    <span class="card__header-subtitle">5 Estrelas</span>
+                    <h1 class="card__header-title">
+                        <img src="/images/AdrianaGMaps.png" alt="" style="height: 80px;top: 70px;position: absolute;">
+                    </h1>
+                </header>
+
+                <ul class="card__list grid">
+                    <br>
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description" style="margin-top: 50px;">
+                            <span class="card__text">
+                                "Estou aqui para elogiar a clínica e a sua equipe maravilhosa.🤔😍
+                                Sempre muito bem recepcionada pela Paty que é um amor de pessoa 👀❤ e a Doutora
+                                Tatiane!! Sem palavras, uma excelente profissional, em um período de 4 meses dois dos
+                                meus cachorros ficaram muito doentes.
+                                O primeiro foi o Holly, diagnosticado com o vírus da CINOMOSE eu quase fiquei louca.
+                                A doutora me acalmou dizendo que se eu fizesse todo o tratamento direitinho a chance era
+                                grande. Me peguei nessas palavras dela e fui até o fim, ela me passou um tratamento
+                                maravilhoso e em três meses meu Holly já estava recuperado e tomando a vacina💉V10.
+                                Não demorou muito e a ESTRELA 🐶uma cadela que eu resgatei da rua, que sofria maus
+                                tratos, estava muito mal😔 e eu levei até a clínica, lá a Doutora Tatiane fez todos os
+                                exames.
+                                👉👉Ela estava com problema nos rins, pulmão, pata quebrada, prenha, ossos no estômago,
+                                anemia profunda...
+                                A luta mais uma vez travada.
+                                A doutora Tatiane como sempre competente, me disse que não poderia fazer garantias pois
+                                a situação era delicada, mas que ela tinha chances. Então a Doutora fez uma transfusão
+                                de sangue e seguida a CIRURGIA para retirada dos OSSOS do estômago, e aproveitou e fez
+                                uma Piometria. Tudo que a Doutora me orientava eu fazia certinho.
+                                Tratamos os Rins da ESTRELA e ela ficou Boa.
+                                A infelicidade veio quando descobrimos que ela em estava com CINOMOSE logo depois que
+                                ela já estava recuperada da CIRURGIA..
+                                Enfim a imunidade dela estava baixa para lutar contra um vírus desse.
+                                Tentamos de tudo, mas não deu porque o organismo dela estava fraco para lutar e a
+                                ESTRELA só tinha 10 meses de vida e já havia passado por tudo isso 😢
+                                Mas enfim quero agradecer a Doutora Tatiane de coração e o apoio constante de toda
+                                equipe.
+                                Estou fazendo curso de auxiliar de veterinário.
+                                Estou me inspirando na Doutora Tatiane pois admiro muito ela...
+                                👏👏👏👏
+                                ❤🐶🐾"
+                            </span>
+                        </p>
+                    </li>
+
+                </ul>
+            </article>
+            <!--==================== CARD 4 ====================-->
+            <article class="card__content grid" style="width: 235;">
+                <div class="card__pricing">
+                    <div class="card__star-icon">
+                        <p class="fivestr">5.0</p>
+                        <img src="/images/estrela.webp" alt="" style="height: 60px;">
+                    </div>
+                </div>
+
+                <header class="card__header">
+                    <div class="card__header-circle grid">
+                        <img src="/images/gstars-removebg-preview.png" alt="" class="card__header-img">
+                    </div>
+
+                    <span class="card__header-subtitle">5 Estrelas</span>
+                    <h1 class="card__header-title">
+                        <img src="/images/hermesGMaps.png" alt="" style="height: 80px;top: 70px;position: absolute;">
+                    </h1>
+                </header>
+
+                <ul class="card__list grid">
+                    <br>
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description" style="margin-top: 50px;">
+                            <span class="card__text" style="font: size 2rem;;">
+                                "Atendimento da veterinária Tatiane , muito bom comigo e com minha calopsita , nota
+                                1000"
+                            </span>
+                        </p>
+                    </li>
+
+                </ul>
+            </article>
+
+            <!--==================== CARD 5 ====================-->
+            <article class="card__content grid">
+                <div class="card__pricing">
+                    <div class="card__star-icon">
+                        <p class="fivestr">5.0</p>
+                        <img src="/images/estrela.webp" alt="" style="height: 60px;">
+                    </div>
+                </div>
+
+                <header class="card__header">
+                    <div class="card__header-circle grid">
+                        <img src="/images/gstars-removebg-preview.png" alt="" class="card__header-img">
+                    </div>
+
+                    <span class="card__header-subtitle">5 Estrelas</span>
+                    <h1 class="card__header-title">
+                        <img src="/images/LarissaGmaps.png" alt="" style="height: 80px;top: 70px;position: absolute;">
+                    </h1>
+                </header>
+
+                <ul class="card__list grid">
+                    <br>
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description" style="margin-top: 50px;">
+                            <span class="card__text">
+                                "Minha experiência foi ótima, pois se não tivesse sido o empenho da Dra Tati e de toda a
+                                sua equipe, em investiigar o que meu cachorro tinha, consiguimos decobrir o que ele
+                                tinha e salvar a vida dele. Muito obrigada pelo carinho e dedicação com o Simba ♥️"
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </article>
+
+            <!--==================== CARD 6 ====================-->
+            <article class="card__content grid">
+                <div class="card__pricing">
+                    <div class="card__star-icon">
+                        <p class="fivestr">5.0</p>
+                        <img src="/images/estrela.webp" alt="" style="height: 60px;">
+                    </div>
+                </div>
+
+                <header class="card__header">
+                    <div class="card__header-circle grid">
+                        <img src="/images/gstars-removebg-preview.png" alt="" class="card__header-img">
+                    </div>
+
+                    <span class="card__header-subtitle">5 Estrelas</span>
+                    <h1 class="card__header-title">
+                        <img src="/images/amandaGMaps.png" alt="" style="height: 80px;top: 70px;position: absolute;">
+                    </h1>
+                </header>
+
+                <ul class="card__list grid">
+                    <br>
+                    <li class="card__list-item">
+                        <i class="uil uil-check card__list-icon"></i>
+                        <p class="card__list-description" style="margin-top: 50px;">
+                            <span class="card__text">
+                                "Eu vim conhecer a clínica Lilicão através de recomendações e hoje eu só levo lá pois se
+                                não tivesse sido a equipe veterinária deles meu cachorro não estaria vivo hoje, foi
+                                graças ao pensamento rápido da equipe que bateu o olho nos exames dele para descobrir o
+                                que ele tinha e começar o tratamento imediato. Eu sou grata até hoje pelo que fizeram
+                                por nós, Por um preço acessível, Todos os funcionários são excelentes, não tenho o que
+                                reclamar do estabelecimento."
+                            </span>
+                        </p>
+                    </li>
+
+                </ul>
+            </article>
+        </div>
+    </section>
+    <!-- <section id="infographic-container grid">
+        <div id="infographic-container">
+            <div>
+                
+            </div>
+            <img src="./InfográficoHovetLlilicão.png" style="height: 300px;">
+        </div>
+    </section> -->
+
+
+
+    <!-- <main class="rowesp">
+        <div class="tittleesp">
+            <div class="rows">
+                <div class="row1esp">
+                    <div class="titles-esp">
+                        <span class="title-esp-1">Nossas</span>
+                        <span class="title-esp-2">Especialidades</span>
+                    </div>
+                    <div class="especialidade" id="ecg">
+                        <img src="./ECG.jpg" alt="Eletrocardiograma" class="esp-img" id="imgraio">
+                        <div class="titulo-esp">Eletrocardiograma</div>
+                        <div class="texto-esp">
+                            <p>Raio X - Diagnóstico por imagem para avaliação de fraturas e outros problemas internos.</p>
+                        </div>
+                    </div>
+
+                    <div class="especialidade" id="raiox">
+                        <img src="./logo sem fundo.png" alt="Clínica geral Veterinária" class="esp-img" draggable="false">
+                        <div class="titulo-esp">Clínica geral Veterinária</div>
+                        <div class="texto-esp">
+                            <p>Na Hovet Lilicão, o Raio-X oferece diagnósticos rápidos e precisos, garantindo o melhor cuidado para seu pet com tecnologia avançada e excelência.</p>
+                        </div>
+                    </div>
+
+                    <div class="especialidade" id="cgvet">
+                        <img src="./OIP.jfif" alt="Cirurgia Veterinária" class="esp-img">
+                        <div class="titulo-esp">Cirurgia Veterinária</div>
+                        <div class="texto-esp">
+                            <p>Raio X - Diagnóstico por imagem para avaliação de fraturas e outros problemas internos.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row2esp">
+                    <p class="intro-text">
+                        Cuidamos do seu pet com excelência! Com uma equipe especializada e tecnologia de ponta, oferecemos diagnósticos precisos e tratamentos eficazes para cães, gatos e animais silvestres. Para seu amigo, pense o melhor, pense Hovet Lilicão!
+                    </p>
+
+                    <div class="especialidade" id="ecg">
+                        <img src="./vetAS.jpg" alt="Veterinário de animais silvestres" class="esp-img" id="imgraio">
+                        <div class="titulo-esp">Veterinário de animais silvestres</div>
+                        <div class="texto-esp">
+                            <p>.......</p>
+                        </div>
+                    </div>
+
+                    <div class="especialidade" id="raiox">
+                        <img src="./onde-marcar-raio-x-vet-removebg-preview.png" alt="Raio-X" class="esp-img">
+                        <div class="titulo-esp">Raio-X</div>
+                        <div class="texto-esp">
+                            <p>Na Hovet Lilicão, o Raio-X oferece diagnósticos rápidos e precisos, garantindo o melhor cuidado para seu pet com tecnologia avançada e excelência.</p>
+                        </div>
+                    </div>
+
+                    <div class="especialidade" id="ozn">
+                        <img src="./ozonioterapia-oasis-1024x574.png" alt="Ozônioterapia" class="esp-img">
+                        <div class="titulo-esp">Ozônioterapia</div>
+                        <div class="texto-esp">
+                            <p>Raio X - Diagnóstico por imagem para avaliação de fraturas e outros problemas internos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <br>
+            <div class="show-more-container">
+                <a href="#">
+                    <button id="show-more" class="show-more-btn">Veja mais especialidades</button>
+                </a>
+            </div>
+        </div>
+    </main> -->
+    <section id="faq">
+    <div class="faq-title">
+        <span class=""
+        style="font-size:3rem;">Perguntas Frequentes</span>
+    </div>
+    <div class="container-faq">
+        <div class="wrapper-faq">
+            <button class="toggle-faq">
+                <span>É Necessário vermifugar meu pet antes de vacinar?</span>
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="answer-faq">
+                <p>Sim, é recomendado vermifugar seu pet antes de vaciná-lo. Isso porque parasitas internos, como vermes, podem comprometer o sistema imunológico do animal, dificultando a eficácia da vacina. Além disso, o estado de saúde geral do pet deve estar ideal para que ele responda adequadamente à imunização.</p>
+            </div>
+        </div>
+        <div class="wrapper-faq">
+            <button class="toggle-faq">
+                <span>Com que frequência devo levar meu pet ao veterinário?</span>
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="answer-faq">
+                <p>Recomenda-se uma consulta de rotina pelo menos uma vez a cada 6 meses para adultos saudáveis. Filhotes, animais idosos ou com condições específicas podem necessitar de visitas mais frequentes.</p>
+            </div>
+        </div>
+        <div class="wrapper-faq">
+            <button class="toggle-faq">
+                <span> Posso dar banho no meu pet após a vacinação?</span>
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="answer-faq">
+                <p>É ideal esperar cerca de uma semana após a vacinação para dar banho. Isso ajuda a evitar estresse adicional enquanto o organismo do pet responde à vacina.</p>
+            </div>
+        </div>
+        <div class="wrapper-faq">
+            <button class="toggle-faq">
+                <span>Como sei se meu pet está com dor?</span>
+                <i class="fas fa-plus icon"></i>
+            </button>
+            <div class="answer-faq">
+                <p>Os sinais incluem mudança de comportamento, falta de apetite, lamber ou morder uma área específica, dificuldade para se movimentar ou sons de desconforto. Em caso de dúvida, procure um veterinário.</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="button-faq-container">
+        <a href="/html/faq.html">
+            <button class="show-more-faq-button">
+                Confira Mais Perguntas Frequentes 
+            </button>
+        </a>
+    </div>
+    </section>
+    <section id="map">
+        <div class="location-container">
+            <div class="location-content">
+                <div class="content-container">
+                    <h1>Sempre perto de você!</h1>
+                    <img src="/images/logo sem fundo.png"
+                    style="height: 200px;
+                    width:200px">
+                    <p>Confira nossos setores no Google Maps</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58561.52017890021!2d-46.53516893327834!3d-23.457037095382805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce8b2648994d51%3A0xd586aa03434c7775!2sHospital%20Veterin%C3%A1rio%20-%20Hovet%20Lilic%C3%A3o%20%F0%9F%90%BE!5e0!3m2!1spt-BR!2sbr!4v1736809954756!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="emailbox">
+        <div class="emailbox-container">
+          <div class="emailbox-content">
+            <div class="left-side">
+              <div class="address details">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="topic">Endereços</div>
+                <div class="text-one" style="color: #3B67AA;">Clínica Hovet Lilicão Aeroporto de Guarulhos</div>
+                <div class="text-two" style="color: chartreuse;">Hospital Hovet Lilicão Mooca</div>
+                <div class="text-three" style="color: #3B67AA;">Center Vet Lilicão - Vila Augusta - Guarulhos</div>
+              </div>
+              <div class="phone details">
+                <i class="fas fa-phone-alt"></i>
+                <div class="topic">Telefone</div>
+                <div class="text-one">+55 112835-1614</div>
+                <div class="text-one">+55 1195730-4584</div>
+              </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic">Email</div>
+                <div class="text-one">hovetlilicao@gmail.com</div>
+                <div class="text-one">petstorelilicao@gmail.com</div>
+                
+              </div>
+            </div>
+            <div class="right-side">
+              <div class="topic-text">Nos envie uma mensagem</div>
+              <p>A Clínica Veterinária Hovet Lilicão está aqui para cuidar do seu pet com amor e dedicação. Envie uma mensagem para dúvidas ou agendamentos. Será um prazer atendê-lo!</p>
+              <form class="form-inputbox" action="#">
+                <div class="input-box">
+                  <input type="text" placeholder="Digite seu nome">
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="Digite seu email">
+                </div>
+                <div class="input-box message-box">
+                  <textarea placeholder="Escreva uma mensagem para nós"></textarea>
+                </div>
+                <div class="emailbox-button">
+                  <input type="button" value="Enviar">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+    <footer>
+        <div class="footer-col-container">
+            <div class="footer-logo">
+                <a href="/html/index.html"
+                style="display: grid; margin:auto; text-decoration:none;">
+                    <img src="/images/logo-removebg-preview.png" alt="Logo">
+                    <Span class="fivestr">Hovet Lilicão</Span>
+                </a>
+            </div>
+            <div class="footer-col">
+                <h4>Seções</h4>
+                <ul>
+                    <li><a href="#introduction">Introdução</a></li>
+                    <li><a href="#main2">Serviços</a></li>
+                    <li><a href="#subtitle-container">Avaliações</a></li>
+                    <li><a href="#emailbox">Contate-nos</a></li>
+                    <li><a href="#map">locais</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Sub páginas</h4>
+                <ul>
+                    <li><a href="/html/agendamento.html">Agendar Consulta</a></li>
+                    <li><a href="/html/modelohovetlilicao.html">Modelo Hovet Lilicão</a></li>
+                    <li><a href="/html/faq.html">Perguntas Frequentes</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>outros</h4>
+                <ul>
+                    <li><a href="/html/trabalheConosco.html">Trabalhe Conosco</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Nossas redes sociais</h4>
+                <div class="links">
+                    <a href="https://www.tiktok.com/@hovet_lilicao"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/hospitalveterinariolilicao/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/551128351614"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/hovetlilicao/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const hamburgerButton = document.querySelector('.hamburger-btn');
+        const navContainer = document.querySelector('.container-navs');
+
+       
+        hamburgerButton.addEventListener('click', () => {
+        hamburgerButton.classList.toggle('active');
+
+        avContainer.classList.toggle('active');
+});
+    </script>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+    </script>
+    <script>
+        const botao = document.querySelector('#arrow-down');
+
+        botao.addEventListener('click', () => {
+            const targetSection = document.querySelector('#introduction');
+            window.scroll({ top: window.innerHeight, behavior: "smooth" });
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            const items = document.querySelectorAll('.apresentation-item');
+            items.forEach(item => observer.observe(item));
+        });
+    </script>
+
+    <script>
+        function showPopup() {
+            const popup = document.getElementById('welcome-popup');
+            popup.style.display = 'flex';
+        }
+
+        // Função para fechar o popup
+        function closePopup() {
+            const popup = document.getElementById('welcome-popup');
+            popup.style.display = 'none';
+        }
+
+        // Verificar se o popup já foi mostrado na sessão (opcional)
+        if (!sessionStorage.getItem('popupShown')) {
+            // Mostra o popup após 1 segundo
+            setTimeout(() => {
+                showPopup();
+                sessionStorage.setItem('popupShown', 'true');
+            }, 1000);
+        }
+
+        // Fecha o popup quando o botão de fechar é clicado
+        document.getElementById('close-popup').addEventListener('click', closePopup);
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            // Parâmetros de configuração
+            loop: true,              // Permite que o carrossel faça loop
+            autoplay: {
+                delay: 3000,          // Intervalo entre as transições (em ms)
+                disableOnInteraction: false,  // Continua a autoplay mesmo após interação do usuário
+            },
+            speed: 1000,             // Velocidade da transição entre os slides
+            effect: 'fade',          // Efeito de transição entre os slides
+            pagination: {
+                el: '.swiper-pagination',  // Indicadores de página (os pontos)
+                clickable: true,           // Permite clicar nos pontos para navegar
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',  // Botão "next"
+                prevEl: '.swiper-button-prev',  // Botão "prev"
+            },
+        });
+
+        // Adiciona um evento de clique para avançar para o próximo slide
+        document.querySelector('.swiper').addEventListener('click', function () {
+            swiper.slideNext(); // Avança para o próximo slide
+        });
+    </script>
+    <script type="text/javascript">
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const main = document.getElementById('main');
+
+        signUpButton.addEventListener('click', () => {
+            main.classList.add("right-panel-active");
+        });
+        signInButton.addEventListener('click', () => {
+            main.classList.remove("right-panel-active");
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const targets = document.querySelectorAll('.span-card-subtitle, .span-card-main');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            targets.forEach(target => observer.observe(target));
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card__content');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Para de observar o card após a animação
+                    }
+                });
+            });
+
+            cards.forEach(card => observer.observe(card));
+        });
+    </script>
+
+    <script>
+        let toggles = document.getElementsByClassName('toggle-faq');
+    let contentDiv = document.getElementsByClassName('answer-faq');
+    let icons = document.getElementsByClassName('icon');
+
+    for (let i = 0; i < toggles.length; i++) {
+        toggles[i].addEventListener('click', () => {
+            if (parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight) {
+                contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
+                toggles[i].style.color = "#0084e9";
+                icons[i].classList.remove('fa-plus');
+                icons[i].classList.add('fa-minus');
+            } else {
+                contentDiv[i].style.height = "0px";
+                toggles[i].style.color = "#111130";
+                icons[i].classList.remove('fa-minus');
+                icons[i].classList.add('fa-plus');
+            }
+
+            for (let j = 0; j < contentDiv.length; j++) {
+                if (j !== i) {
+                    contentDiv[j].style.height = "0px";
+                    toggles[j].style.color = "#111130";
+                    icons[j].classList.remove('fa-minus');
+                    icons[j].classList.add('fa-plus');
+                }
+            }
+        });
+    }
+    </script>
+    <script>
+        //loading page
+        window.addEventListener('load', () => {
+            const loading = document.getElementById('loading');
+            const content = document.getElementById('content');
+
+            // Esconde a tela de loading após 2 segundos
+            setTimeout(() => {
+                loading.classList.add('hidden');
+                content.style.display = 'block';
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
