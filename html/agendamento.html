@@ -14,11 +14,16 @@
     <link rel="stylesheet" href="/css/styleinfografico.css">
     <link rel="stylesheet" href="/css/agendamento.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Agendar uma Consulta</title>
+    <title>Agendar uma Consulta - Hovet Lilicão</title>
     <script src="https://js.stripe.com/v3/"></script>
 </head>
 
 <body>
+    <div class="whatsapp-container">
+        <a href="https://wa.me/551128351614">
+            <img class="whatsapp-icon" src="/images/wha-logo.webp">
+        </a>
+    </div>
     <header class="header">
         <div class="header-top">
             <div class="title-container">
@@ -506,6 +511,7 @@
         });
     </script>
     <script>
+        // Função para ajustar os limites de data (mínima e máxima)
 function ajustarLimitesData() {
     const dataInput = document.getElementById("data");
     const hoje = new Date();
@@ -523,9 +529,19 @@ function ajustarLimitesData() {
     dataInput.max = dataMaxima.toISOString().split("T")[0];
 }
 
+function verificarDia(event) {
+    const data = new Date(event.target.value);
+    const diaSemana = data.getUTCDay();
+    
+    if (diaSemana === 0) { // 0 representa domingo
+        alert('As consultas não podem ser agendadas aos domingos.');
+        event.target.value = ''; // Limpa o campo de data
+    }
+}
 
 ajustarLimitesData();
 document.getElementById("data").addEventListener("input", ajustarLimitesData);
+document.getElementById("data").addEventListener("change", verificarDia);
 
     </script>
     <script src="/js/agendamento.js"></script>

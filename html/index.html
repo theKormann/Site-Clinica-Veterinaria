@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -17,13 +16,42 @@
 </head>
 <div id="welcome-popup" class="popup-overlay">
     <div class="popup-content">
-        <img src="/images/Capa para facebook janeiro branco moderno clean cinza claro e escuro (5).png" alt="Anúncio" class="popup-image" />
+        <img src="/images/consultas.jpg" alt="Anúncio" class="popup-image" />
         <span class="span-popup">Aproveite a nossa mais nova novidade!</span>
         <button id="close-popup" class="close-button">Fechar</button>
     </div>
 </div>
 
 <body>
+    <section id="cookies-container">
+        <div class="cookie-content">
+            <span class="cookie-text">
+                Este site usa cookies para melhorar sua experiência. Escolha suas preferências.
+            </span>
+            <div class="cookies-button-container">
+                <button id="settings-button">Definições de Cookies</button>
+                <button id="reject-button">Rejeitar Todos</button>
+                <button id="accept-button">Aceitar Todos</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal de Configuração de Cookies -->
+    <div id="cookie-settings-modal" class="modal">
+        <div class="modal-content">
+            <h2>Configuração de Cookies</h2>
+            <label><input type="checkbox" id="analytics-consent"> Cookies Analíticos</label>
+            <label><input type="checkbox" id="ads-consent"> Cookies de Publicidade</label>
+            <button id="save-consent">Salvar Preferências</button>
+        </div>
+    </div>
+    
+    
+    <div class="whatsapp-container">
+        <a href="https://wa.me/551128351614">
+            <img class="whatsapp-icon" src="/images/wha-logo.webp">
+        </a>
+    </div>
     <div id="loading">
         <img src="/images/logo-removebg-preview.png" alt="Carregando...">
     </div>
@@ -36,9 +64,12 @@
                     width:300px;">
                 </a>
             </div>
-            <button class="hamburger-btn" aria-label="Toggle navigation">
-                <span class="hamburger-icon"></span>
+            <button class="hamburger-btn" aria-label="Abrir menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </button>
+            
             <div class="container-navs">
                 <nav class="nav__list">
                     <li class="dropdown__item">
@@ -49,7 +80,7 @@
                             <li><a href="#" class="dropdown__link"><i class="ri-arrow-up-down-line"></i>
                                     <div class="info-item">
                                         <span class="infonum">
-                                            <a href="#">Especialidades</a>
+                                            <a href="/html/quemSomos.html">Quem somos</a>
                                         </span>
                                     </div>
                                 </a>
@@ -57,7 +88,7 @@
                             <li><a href="#" class="dropdown__link"><i class="ri-arrow-up-down-line"></i>
                                     <div class="info-item">
                                         <span class="infonum">
-                                            <a href="/html/quemSomos.html">Quem somos</a>
+                                            <a href="/html/servicos.html">Serviços</a>
                                         </span>
                                     </div>
                                 </a>
@@ -184,7 +215,8 @@
 
                 <div class="swiper-slide">
                     <h1 class="title three"></h1>
-                    <img src="#" alt="Image 3" />
+                    <img src="https://wallpaperaccess.com/full/1595920.jpg" alt="Image 3" />
+
                 </div>
 
                 <div class="swiper-slide">
@@ -211,10 +243,13 @@
                 </div>
                 <div class="views-field-text">
                     <p>
-                    <div class="fivestr">Na Hovet Lilicão, Nossa missão</div> é proporcionar o melhor cuidado e carinho
-                    para os seus pets. Somos uma clínica veterinária dedicada à saúde e bem-estar dos seus amigos de
-                    quatro patas, oferecendo uma ampla gama de serviços de alta qualidade em um ambiente acolhedor e
-                    equipado com a mais moderna tecnologia.</p>
+                    <div class="fivestr">Na Hovet Lilicão, Nossa missão</div> O trabalho faz parte da nossa
+                    vida, deve ser feito com prazer
+                    e disciplina, buscando os
+                    objetivos desejados. O dinheiro
+                    não deve ser uma meta, mas a
+                    consequência da valorização
+                    do serviço prestado.</p>
                 </div>
             </li>
             <br>
@@ -225,11 +260,17 @@
                 </div>
                 <div class="views-field-text">
                     <p>
-                    <div class="fivestr">Quem somos?</div> somos apaixonados por cuidar de quem você mais ama. Somos uma
-                    clínica veterinária dedicada à saúde e ao bem-estar dos pets, oferecendo serviços de alta qualidade
-                    em um ambiente acolhedor e moderno. Nossa equipe é formada por profissionais qualificados,
-                    comprometidos em proporcionar cuidado, carinho e confiança para os seus amigos de quatro patas e
-                    suas famílias.</p>
+                    <div class="fivestr">Quem somos & Visão</div> Constituir em um mesmo local
+                    uma equipe de profissionais
+                    multidisciplinar e a
+                    comercialização de produtos
+                    para o pet, buscando através do
+                    emprego de novas tecnologias
+                    obterem resultados que possam
+                    ser percebidos pela comunidade
+                    como referência para a
+                    prevenção, diagnóstico,
+                    tratamento e bem estar animal.</p>
                 </div>
             </li>
             <br>
@@ -239,10 +280,8 @@
                 </div>
                 <div class="views-field-text">
                     <p>
-                    <div class="fivestr">nossos valores,</div> são baseados no respeito, na ética e no compromisso com o
-                    bem-estar dos pets e suas famílias. Atuamos com dedicação, amor e profissionalismo, oferecendo um
-                    atendimento humanizado e serviços de qualidade, sempre com a confiança e a excelência como nossos
-                    pilares.</p>
+                    <div class="fivestr">Nossos Valores,</div> Credibilidade, Transparência, Honestidade, Bom Atendimento, Eficiência, Disciplina, Espírito de Equipe e Melhoria Contínua</p>
+                    <p>Isso nos torna muito mais do que só mais uma equipe.</p>
                 </div>
             </li>
         </ul>
@@ -280,7 +319,9 @@
                             saudável e longa para seu pet. Confie na nossa equipe para cuidar do seu animal com
                             segurança e carinho.
                         </p>
-                        <button class="saibamais">Saiba Mais</button>
+                        <a href="/html/servicos.html" class="link-swiper">
+                            <button class="saibamais">Saiba Mais</button>
+                        </a>
                     </div>
                 </div>
             </swiper-slide>
@@ -295,7 +336,9 @@
                             silvestres, garantindo cuidados de qualidade e um atendimento especializado para a saúde e
                             bem-estar dessas espécies.
                         </p>
-                        <button class="saibamais">Saiba Mais</button>
+                        <a href="/html/servicos.html" class="link-swiper">
+                            <button class="saibamais">Saiba Mais</button>
+                        </a>
                     </div>
                 </div>
             </swiper-slide>
@@ -311,7 +354,9 @@
                             saúde e o bem-estar dos animais, oferecendo diagnósticos precisos e tratamentos
                             personalizados.
                         </p>
-                        <button class="saibamais">Saiba Mais</button>
+                        <a href="/html/servicos.html">                      
+                            <button class="saibamais">Saiba Mais</button>
+                        </a>
                     </div>
                 </div>
             </swiper-slide>
@@ -338,7 +383,9 @@
                     <div class="content">
                         <p>
                         </p>
-                        <button class="saibamais">Saiba Mais</button>
+                        <a href="/html/servicos.html">
+                            <button class="saibamais">Saiba Mais</button>
+                        </a>
                     </div>
                 </div>
             </swiper-slide>
@@ -832,17 +879,16 @@
                     <li><a href="#introduction">Introdução</a></li>
                     <li><a href="#main2">Serviços</a></li>
                     <li><a href="#subtitle-container">Avaliações</a></li>
-                    <li><a href="#emailbox">Contate-nos</a></li>
                     <li><a href="#map">locais</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Sub páginas</h4>
                 <ul>
+                    <li><a href="/html/quemSomos.html">Quem Somos</a></li>
                     <li><a href="/html/agendamento.html">Agendar Consulta</a></li>
                     <li><a href="/html/modelohovetlilicao.html">Modelo Hovet Lilicão</a></li>
                     <li><a href="/html/faq.html">Perguntas Frequentes</a></li>
-                    <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
                 </ul>
             </div>
@@ -1048,6 +1094,6 @@
             }, 1000);
         });
     </script>
+    <script src="/js/cookies.js"></script>
 </body>
-
 </html>

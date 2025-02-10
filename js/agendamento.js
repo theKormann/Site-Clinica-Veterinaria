@@ -26,26 +26,32 @@ document.getElementById("form-wpp").addEventListener("submit", async function (e
     };
 
     try {
-        // 1. Verifica se o horário já está ocupado para o mesmo setor
-        const verificarResponse = await fetch("http://localhost:8080/agendamentos", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(agendamento),
+        const verificarResponse = await fetch(`http://localhost:8080/agendamentos/verificar?setor=${setor}&dataHoraConsulta=${dataHoraConsulta}`, {
+            method: "GET",
+            headers: { "Content-Type": "application/json" }
         });
 
         const verificarResult = await verificarResponse.json();
-        if (verificarResult && verificarResult.agendado && setor === verificarResult.setor) {
-            throw new(`O horário já está ocupado no setor selecionado.`);
+
+        if (verificarResult.ocupado) {
+            return(`O horário já está ocupado no setor selecionado.`);
         }
 
-        // 2. Recebe a resposta de sucesso e continua com o pagamento
+        const agendamentoResponse = await fetch("http://localhost:8080/agendamentos", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(agendamento),
+        });
+
+        if (!agendamentoResponse.ok) {
+            const errorText = await agendamentoResponse.text();
+            throw new Error(`Erro ao agendar consulta: ${errorText}`);
+        }
+
+        // 3. Criar o pagamento
         const pagamentoResponse = await fetch("http://localhost:8080/pagamentos/criar", {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify(agendamento),
         });
 
@@ -54,11 +60,13 @@ document.getElementById("form-wpp").addEventListener("submit", async function (e
             throw new Error(`Erro ao criar pagamento: ${errorText}`);
         }
 
+        // 4. Redirecionar para o pagamento
         const { url } = await pagamentoResponse.json();
-        window.location.href = url; // Redireciona para o Stripe
+        window.location.href = url;
 
     } catch (error) {
         console.error("Erro:", error);
-        alert(error.message); // Exibe o erro ao usuário
+        alert(error.message);
     }
 });
+
